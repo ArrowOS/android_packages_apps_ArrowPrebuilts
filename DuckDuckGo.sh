@@ -22,7 +22,7 @@ if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
 		FILE_DATE=000000
 	fi
 
-	if [[ $FILE_DATE -gt $file_last_update ]]; then
+	if [[ $FILE_DATE -ge $file_last_update ]]; then
 		echo "We already have the latest version of DuckDuckGo"
 	else
 		echo "Grabbing the latest version of DuckDuckGo"
