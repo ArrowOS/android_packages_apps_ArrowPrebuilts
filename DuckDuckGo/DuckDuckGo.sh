@@ -1,7 +1,7 @@
 #!/bin/bash
 gh_json_url=https://api.github.com/repos/duckduckgo/Android/releases/latest
 CUR_DIR=$(pwd)
-DOWN_PATH="$ANDROID_BUILD_TOP/packages/apps/DuckDuckGo"
+DOWN_PATH="$ANDROID_BUILD_TOP/packages/apps/ArrowPrebuilts/DuckDuckGo"
 
 #jq check
 is_jq=$(which jq)
