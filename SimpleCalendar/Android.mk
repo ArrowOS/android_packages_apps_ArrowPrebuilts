@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := SimpleCalender
+LOCAL_MODULE := SimpleCalendar
 LOCAL_OVERRIDES_PACKAGES := Calendar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -10,6 +10,6 @@ LOCAL_MIN_SDK_VERSION := 21
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
-LOCAL_SRC_FILES := SimpleCalender.apk
+LOCAL_SRC_FILES := SimpleCalendar.apk
 LOCAL_UNINSTALLABLE_MODULE := true
 include $(BUILD_PREBUILT)
