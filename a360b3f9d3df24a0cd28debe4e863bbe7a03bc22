@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "67d65910_a462e0cd",
+        "filename": "PixelBridge/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2020-09-17T18:38:00Z",
+      "side": 1,
+      "message": "space",
+      "revId": "a360b3f9d3df24a0cd28debe4e863bbe7a03bc22",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9f87ab8a_a07203d8",
+        "filename": "PixelBridge/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2020-09-17T18:38:00Z",
+      "side": 1,
+      "message": "space",
+      "revId": "a360b3f9d3df24a0cd28debe4e863bbe7a03bc22",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    }
+  ]
+}
