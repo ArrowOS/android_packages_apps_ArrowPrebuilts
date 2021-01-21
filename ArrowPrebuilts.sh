@@ -10,7 +10,7 @@ is_jq=$(which jq)
 if [[ -z $is_jq ]]; then
     echo "please install jq (ubuntu)"
     echo "sudo apt install jq"
-    return
+    exit 1
 fi
 
 function fetchPrebuilts() {
