@@ -17,7 +17,7 @@ function fetchPrebuilts() {
 
     if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
         if [ $1 != "Lawnchair" ]; then
-            gh_json=$(curl -s -H "Authorization: token af9277f574ba62458ae50e176a9948dee048afe7" "$2")
+            gh_json=$(curl -s "$2")
             file_last_update=$(echo $gh_json | jq -r '.assets[0].updated_at' | date -d `cut -f1 -d"T"` +"%Y%m%d")
             apk_down_url=$(echo $gh_json | jq -r '.assets[0].browser_download_url')
         else
