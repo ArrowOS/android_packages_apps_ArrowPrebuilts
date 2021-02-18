@@ -16,15 +16,9 @@ fi
 function fetchPrebuilts() {
 
     if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
-        if [ $1 != "Lawnchair" ]; then
-            gh_json=$(curl -s "$2")
-            file_last_update=$(echo $gh_json | jq -r '.assets[0].updated_at' | date -d `cut -f1 -d"T"` +"%Y%m%d")
+        gh_json=$(curl -s "$2")
+        file_last_update=$(echo $gh_json | jq -r '.assets[0].updated_at' | date -d `cut -f1 -d"T"` +"%Y%m%d")
             apk_down_url=$(echo $gh_json | jq -r '.assets[0].browser_download_url')
-        else
-            file_last_update=$(curl -s -L "$2" | grep "latest.apk" | awk '{print $3}')
-            file_last_update=$(date -d"$file_last_update" +"%Y%m%d")
-            apk_down_url="${2}/latest.apk"
-        fi
 
         if [[ -f "${DOWN_PATH}/${1}/${1}.apk" ]]; then
             FILE_DATE=$(/bin/date +%Y%m%d -d "$(/usr/bin/stat -c %x "${DOWN_PATH}/${1}/${1}.apk")")
@@ -59,7 +53,6 @@ function fetchPrebuilts() {
 fetchPrebuilts DuckDuckGo https://api.github.com/repos/duckduckgo/Android/releases/latest
 fetchPrebuilts SimpleCalendar https://api.github.com/repos/SimpleMobileTools/Simple-Calendar/releases/latest
 fetchPrebuilts SimpleGallery https://api.github.com/repos/SimpleMobileTools/Simple-Gallery/releases/latest
-fetchPrebuilts Lawnchair https://lawnchairmirror.duckdns.org/lawnchair/latest
 
 # git commit stage
 if [ ${#commit_msg[@]} -ne 0 ]; then
