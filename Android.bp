@@ -1,0 +1,69 @@
+android_app_import {
+	name: "DuckDuckGo",
+	apk: "DuckDuckGo/DuckDuckGo.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["Browser2"],
+}
+
+android_app_import {
+	name: "Lawnchair",
+	apk: "Lawnchair/Lawnchair.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["Home", "Launcher2", "Launcher3", "Launcher3QuickStep"],
+}
+
+android_app_import {
+        name: "SimpleCalendar",
+        apk: "SimpleCalendar/SimpleCalendar.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+        overrides: ["Calendar"],
+}
+
+android_app_import {
+        name: "SimpleGallery",
+        apk: "SimpleGallery/SimpleGallery.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+        overrides: ["Gallery2"],
+}
+
+android_app_import {
+        name: "WeatherIcons",
+        apk: "WeatherIcons/WeatherIcons.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+}
+
+android_app_import {
+        name: "stats",
+        apk: "stats/stats.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+}
