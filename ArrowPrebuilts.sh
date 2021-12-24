@@ -59,7 +59,7 @@ function fetchPrebuilts() {
 fetchPrebuilts DuckDuckGo https://api.github.com/repos/duckduckgo/Android/releases/latest
 fetchPrebuilts SimpleCalendar https://api.github.com/repos/SimpleMobileTools/Simple-Calendar/releases/latest
 fetchPrebuilts SimpleGallery https://api.github.com/repos/SimpleMobileTools/Simple-Gallery/releases/latest
-fetchPrebuilts Lawnchair https://lawnchairmirror.duckdns.org/lawnchair/latest
+#fetchPrebuilts Lawnchair https://lawnchairmirror.duckdns.org/lawnchair/latest
 
 # git commit stage
 if [ ${#commit_msg[@]} -ne 0 ]; then
