@@ -11,18 +11,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "Lawnchair",
-	apk: "Lawnchair/Lawnchair.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-	overrides: ["Home", "Launcher2", "Launcher3", "Launcher3QuickStep"],
-}
-
-android_app_import {
         name: "SimpleCalendar",
         apk: "SimpleCalendar/SimpleCalendar.apk",
         presigned: true,
