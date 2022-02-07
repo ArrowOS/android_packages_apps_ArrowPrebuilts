@@ -8,8 +8,12 @@ commit_msg=()
 #jq check
 is_jq=$(which jq)
 if [[ -z $is_jq ]]; then
-    echo "please install jq (ubuntu)"
-    echo "sudo apt install jq"
+    echo "please install jq"
+    if [ $(command -v apt) ]; then
+        echo "sudo apt install jq"
+    elif [ $(command -v pacman) ]; then
+        echo "sudo pacman -S jq"
+    fi
     exit 0
 fi
 
